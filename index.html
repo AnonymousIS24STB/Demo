@@ -1,37 +1,21 @@
-# Stylebook: Content-Dependent Speaking Style Modeling for Any-to-Any Voice Conversion using Only Speech Data
-
-#### Anonymous submission to Interspeech 2024
-
- 
-
-## Abstract
-
-While many any-to-any voice conversion models succeed in transferring the target speech’s style to the converted speech, they still have limitations in faithfully reproducing the target speaker’s speaking style. In this work, we propose a novel method to extract rich style information from target utterances in an unsupervised manner and to efficiently transfer it to a source speech. Our approach utilizes a self-supervised learning model and a new attention mechanism to collect the speaking styles of a target speaker, each corresponding to the different phonetic content. The collected styles are attended with the source speech’s phonetic content to find the target speaker’s style of pronouncing each content. Then, both the source content and the target style are fed into a diffusion-based decoder to generate the converted speech. Experiment results show that our proposed model can achieve better speaker similarity in any-to-any voice conversion tasks when compared to baseline models.
-
-
-
-## Audio Samples
-
-| Source | Target | YourTTS | DiffVC | FreeVC | StylebookVC (proposed) |
-| :----: | :----: | :-----: | :----: | :----: | :--------------------: |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-|        |        |         |        |        |                        |
-
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>index.html</title>
+</head>
+<body><h1 id='stylebook-content-dependent-speaking-style-modeling-for-any-to-any-voice-conversion-using-only-speech-data'>Stylebook: Content-Dependent Speaking Style Modeling for Any-to-Any Voice Conversion using Only Speech Data</h1>
+<h4 id='anonymous-submission-to-interspeech-2024'>Anonymous submission to Interspeech 2024</h4>
+<p> </p>
+<h2 id='abstract'>Abstract</h2>
+<p>While many any-to-any voice conversion models succeed in transferring the target speech’s style to the converted speech, they still have limitations in faithfully reproducing the target speaker’s speaking style. In this work, we propose a novel method to extract rich style information from target utterances in an unsupervised manner and to efficiently transfer it to a source speech. Our approach utilizes a self-supervised learning model and a new attention mechanism to collect the speaking styles of a target speaker, each corresponding to the different phonetic content. The collected styles are attended with the source speech’s phonetic content to find the target speaker’s style of pronouncing each content. Then, both the source content and the target style are fed into a diffusion-based decoder to generate the converted speech. Experiment results show that our proposed model can achieve better speaker similarity in any-to-any voice conversion tasks when compared to baseline models.</p>
+<p>&nbsp;</p>
+<h2 id='audio-samples'>Audio Samples</h2>
+<figure class='table-figure'><table>
+<thead>
+<tr><th style='text-align:center;' >Source</th><th style='text-align:center;' >Target</th><th style='text-align:center;' >YourTTS</th><th style='text-align:center;' >DiffVC</th><th style='text-align:center;' >FreeVC</th><th style='text-align:center;' >StylebookVC (proposed)</th></tr></thead>
+<tbody><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr><tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr></tbody>
+</table></figure>
+<p>&nbsp;</p>
+</body>
+</html>
