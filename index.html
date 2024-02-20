@@ -696,15 +696,31 @@ li > *:last-child {
 <body class='typora-export'><div class='typora-export-content'>
 <div id='write'  class=''>
   <h1 id='stylebook-content-dependent-speaking-style-modeling-for-any-to-any-voice-conversion-using-only-speech-data'><span>Stylebook: Content-Dependent Speaking Style Modeling for Any-to-Any Voice Conversion using Only Speech Data</span></h1><h4 id='anonymous-submission-to-interspeech-2024'><span>Anonymous submission to Interspeech 2024</span></h4><p><span> </span></p><h2 id='abstract'><span>Abstract</span></h2><p><span>While many any-to-any voice conversion models succeed in transferring the target speech’s style to the converted speech, they still have limitations in faithfully reproducing the target speaker’s speaking style. In this work, we propose a novel method to extract rich style information from target utterances in an unsupervised manner and to efficiently transfer it to a source speech. Our approach utilizes a self-supervised learning model and a new attention mechanism to collect the speaking styles of a target speaker, each corresponding to the different phonetic content. The collected styles are attended with the source speech’s phonetic content to find the target speaker’s style of pronouncing each content. Then, both the source content and the target style are fed into a diffusion-based decoder to generate the converted speech. Experiment results show that our proposed model can achieve better speaker similarity in any-to-any voice conversion tasks when compared to baseline models.</span></p><p>&nbsp;</p>
-  <h2 id='audio-samples'><span>Audio Samples</span></h2><figure class='table-figure'><table><thead><tr><th style='text-align:center;' ><span>Source</span></th><th style='text-align:center;' ><span>Target</span></th><th style='text-align:center;' ><span>YourTTS</span></th><th style='text-align:center;' ><span>DiffVC</span></th><th style='text-align:center;' ><span>FreeVC</span></th><th style='text-align:center;' ><span>StylebookVC (proposed)</span></th></tr></thead>
+
+  <h2 id='audio-samples'><span>Audio Samples</span></h2>
+  <figure class='table-figure'>
+    <table style="width:100%">
+
+    <thead>
+      <tr>
+        <th style='text-align:center;' ><span>Source</span></th>
+        <th style='text-align:center;' ><span>Target</span></th>
+        <th style='text-align:center;' ><span>YourTTS</span></th>
+        <th style='text-align:center;' ><span>DiffVC</span></th>
+        <th style='text-align:center;' ><span>FreeVC</span></th>
+        <th style='text-align:center;' ><span>StylebookVC (proposed)</span>
+      </th>
+    </tr>
+    </thead>
+
     <tbody>
       <tr>
         <td style='text-align:center;' ><audio controls><source src="Source/5639_40744_000015_000011.wav" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls><source src="Target/1995_300_000.wav" type="audio/wav"></audio></td>
         <td style='text-align:center;' ><audio controls><source src="YourTTS/5639to1995_5639_40744_000015_000011_1995_300_000.wav" type="audio/wav"></audio></td>
-        <td style='text-align:center;' ><audio controls><source src="DiffVC/5639_40744_000015_000011.wav" type="audio/wav"></audio></td>
-        <td style='text-align:center;' ><audio controls><source src="FreeVC/5639_40744_000015_000011.wav" type="audio/wav"></audio></td>
-        <td style='text-align:center;' ><audio controls><source src="StylebookVC/5639_40744_000015_000011.wav" type="audio/wav"></audio></td>
+        <td style='text-align:center;' ><audio controls><source src="DiffVC/5639to1995_5639_40744_000015_000011_1995_300_000.wav" type="audio/wav"></audio></td>
+        <td style='text-align:center;' ><audio controls><source src="FreeVC/5639to1995_5639_40744_000015_000011_1995_300_000.wav" type="audio/wav"></audio></td>
+        <td style='text-align:center;' ><audio controls><source src="StylebookVC/5639to1995_5639_40744_000015_000011_1995_300_000.wav" type="audio/wav"></audio></td>
       </tr>
 
       <tr><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td><td style='text-align:center;' >&nbsp;</td></tr>
